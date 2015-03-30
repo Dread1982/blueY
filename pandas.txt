@@ -1,0 +1,31 @@
+- show summary of df: df.describe()
+- show inline plots in notebook: %matplotlib inline
+- DF: index (row labels) and columns (column labels) 
+- Series (1d), DataFram (2d), Panel (3d), Panel4D (4d), PanelND (nd)
+- np.nan == np.nan --> FALSE : use .equals() instead
+- Descriptive statistics:
+	Function	Description
+	count	Number of non-null observations
+	sum	Sum of values
+	mean	Mean of values
+	mad	Mean absolute deviation
+	median	Arithmetic median of values
+	min	Minimum
+	max	Maximum
+	mode	Mode
+	abs	Absolute Value
+	prod	Product of values
+	std	Unbiased standard deviation
+	var	Unbiased variance
+	sem	Unbiased standard error of the mean
+	skew	Unbiased skewness (3rd moment)
+	kurt	Unbiased kurtosis (4th moment)
+	quantile	Sample quantile (value at %)
+	cumsum	Cumulative sum
+	cumprod	Cumulative product
+	cummax	Cumulative maximum
+	cummin	Cumulative minimum
+- Applying elementwise Python functions: df.applymap(f) with f being a python function taking a single value and returning a single value
+- types: df.dtypes
+- use .loc/.iloc/.ix instead of []
+- enable doctestmode: %doctest_mode  --> inline matplotlib will not work while on!!!

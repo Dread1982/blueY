@@ -1,0 +1,19 @@
+Numpy:
+- ndarray: fast and space-efficient multidimensional array providing vectorized arithmetic operations and sophisticated broadcasting capabilities
+- fast operations on entire arrays without having to write loops
+- tools for integrating code written in C, C++ and Fortran
+- import numpy as np
+- ndarray: homogeneous data
+- shape, dtype
+- np.array([4,5,6])
+- vectorization: batch operations on data without writing any for loops
+- indexing and slicing
+- broadcasting: operations between differently sized arrays, e.g. assign scalar to a slice (value is propagated/broadcasted to the entire selection)
+- array slices are views on the original data
+- boolean indexing
+- fancy indexing: indexing using integer arrays
+- transposing arrays and swapping axis
+- universal functions (ufunc): performs elementwise operations on data in ndarrays (--> fast vectorized wrappers for simple functions), e.g. sqrt,exp
+- expressing contidional logic as array operations: numpy.where (vectorized version of the ternary expression x if condition else y)
+- mathematical and statistical methods: sum, mean, ...
+- linear algebra: numpy.linalg (dot, ...)
