@@ -6,6 +6,7 @@
  */
 
 #include "MeanCalculator.h"
+#include <numeric>
 
 void MeanCalculator::AddValue(double newValue)
 {
@@ -24,6 +25,19 @@ double MeanCalculator::GetMean()
 	}
 	return sum / this->values.size();
 }
+
+double MeanCalculator::GetMean(std::vector<double> values)
+{
+	double sum = std::accumulate(values.begin(),values.end(),0.0);
+	return sum / values.size();
+}
+
+double MeanCalculator::GetMean(std::list<double> values)
+{
+	double sum = std::accumulate(values.begin(),values.end(),0.0);
+	return sum / values.size();
+}
+
 
 int MeanCalculator::GetCount()
 {

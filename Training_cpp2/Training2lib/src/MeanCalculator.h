@@ -2,6 +2,7 @@
 #define MEANCALCULATOR_H
 
 #include <vector>
+#include <list>
 
 
 /**
@@ -39,6 +40,10 @@ public:
 	 * Reset the internal list of values
 	 */
 	void Reset();
+
+	double GetMean(std::vector<double> values);
+
+	double GetMean(std::list<double> values);
 };
 
 
