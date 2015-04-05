@@ -7,18 +7,17 @@
 //============================================================================
 
 #include <iostream>
-#include "MeanCalculator.h"
+#include "MeanCalculatorTest.h"
 using namespace std;
 
 int main() {
 
-	MeanCalculator m;
-	m.AddValue(4);
-	m.AddValue(5);
-	m.AddValue(6);
+	MeanCalculatorTest test;
 
-	cout << "count:" << m.GetCount() << endl;
-	cout << "mean:" << m.GetMean() << endl;
+	test.TestAddValue();
+	test.TestGetCount();
+	test.TestGetReset();
+	test.TestGetMean();
 
 	return 0;
 }
