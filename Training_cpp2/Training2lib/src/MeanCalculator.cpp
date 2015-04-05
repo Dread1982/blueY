@@ -7,17 +7,17 @@
 
 #include "MeanCalculator.h"
 
-void MeanCalculator::AddValue(int newValue)
+void MeanCalculator::AddValue(double newValue)
 {
 	this->values.push_back(newValue);
 }
 
-int MeanCalculator::GetMean()
+double MeanCalculator::GetMean()
 {
 	if (this->values.size() == 0)
 		return 0;
 
-	int sum = 0;
+	double sum = 0;
 	for (unsigned int i = 0; i < this->values.size(); i++)
 	{
 		sum += this->values[i];
@@ -34,5 +34,3 @@ void MeanCalculator::Reset()
 {
 	this->values.clear();
 }
-
-

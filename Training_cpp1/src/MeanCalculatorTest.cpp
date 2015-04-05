@@ -75,9 +75,9 @@ void MeanCalculatorTest::TestGetMean()
 
 	bool result2 = meanCalculator->GetMean() == 4;
 
-	meanCalculator->AddValue(2);
+	meanCalculator->AddValue(2.2);
 
-	bool result3 = meanCalculator->GetMean() == 3;
+	bool result3 = meanCalculator->GetMean() == 3.4;
 
 	this->TestResult(result0 && result1 && result2 && result3, "TestGetMean");
 }

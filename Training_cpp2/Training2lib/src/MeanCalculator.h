@@ -14,7 +14,7 @@ class MeanCalculator
 {
 
 private:
-	std::vector<int> values;
+	std::vector<double> values;
 
 public:
 
@@ -23,12 +23,12 @@ public:
 	 *
 	 * @param newValue New value to be added to the internal list
 	 */
-	void AddValue(int newValue);
+	void AddValue(double newValue);
 
 	/**
 	 * Calculate the mean of the current values
 	 */
-	int GetMean();
+	double GetMean();
 
 	/**
 	 * Return the number of values in the internal list
