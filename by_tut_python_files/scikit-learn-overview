@@ -1,0 +1,20 @@
+Estimator: 
+ - must be fitted to the model
+ - fit(X,y) 
+ - predict(T)
+ - score()
+
+cross-validation:
+ - to improve fitting of the model and avoid over-fitting
+ - over-fitting = fits perfectly on train but not good on test data
+ - k-fold cv: split in k chunks and use one as test, repeat this k times
+
+Transformers: 
+ - to clean, reduce, expand, generate features
+ - fit
+ - transform
+ - fit_transform
+
+Pipeline:
+ - to chain multiple transformers (last on has to be an estimator)
+

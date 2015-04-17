@@ -1,0 +1,15 @@
+date;product;color;sale
+2012-01-01;Pullover;blue;1.0
+2012-01-01;Pullover;red;6.0
+2012-01-02;Pullover;blue;3.0
+2012-01-02;Pullover;red;6.0
+2012-01-03;Pullover;blue;5.0
+2012-01-03;Pullover;red;NaN
+2012-01-04;Pullover;blue;5.0
+2012-01-04;Pullover;red;NaN
+2012-01-05;Pullover;blue;4.0
+2012-01-05;Pullover;red;5.0
+2012-01-06;Pullover;blue;3.0
+2012-01-06;Pullover;red;NaN
+2012-01-07;Pullover;blue;5.0
+2012-01-07;Pullover;red;10.0
