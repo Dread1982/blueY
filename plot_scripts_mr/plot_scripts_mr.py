@@ -133,13 +133,15 @@ plt.plot(df_preds_csv_test['C_ID'], df_preds_csv_test['MPR_MEAN'])
 
 db_config = {'CORE': 'CORE', 'MINING': 'MINING'}
 
-l_id = 2889  # l_ext_to_int(9944)  # TODO
-p_id = 31182  # p_ext_to_int(282772) # TODO
-start_c_id = 41945+7
-end_c_id = 42134-7
-
+horizons = range(14, 190, 7)
 ref_c_id = 41938
 mpg_id = 1073
+
+l_id = 2889  # l_ext_to_int(9944)  # TODO
+p_id = 31182  # p_ext_to_int(282772) # TODO
+
+start_c_id = ref_c_id + horizons[0]  # 41945+7
+end_c_id = ref_c_id + horizons[len(horizons)-1]  # 42134-7
 
 # df_sales_db = get_sales_db(db_config, p_id, l_id, start_c_id, end_c_id)
 # df_preds_1073 = get_preds_db(db_config, p_id, l_id, ref_c_id, mpg_id)
